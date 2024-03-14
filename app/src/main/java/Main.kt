@@ -15,6 +15,9 @@ fun main()
     println("Book added: ${book3.tittle}")
 
     val checkOutSuccess = library.checkOutBook(patron1, book1)
+     println("book is avaliable: ${book1.isAvailable()}")
+    println("book is avaliable: ${book2.isAvailable()}")
+    println("book is avaliable: ${book3.isAvailable()}")
     println("Book checked out: $checkOutSuccess")
 
     val returnSuccess = library.returnBook(patron1, book1)
